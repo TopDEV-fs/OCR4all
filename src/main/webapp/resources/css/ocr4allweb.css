@@ -1,0 +1,413 @@
+/* General classes */
+.inline {
+  display: inline-block;
+}
+
+/* Footer */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
+
+/* Side navigation settings */
+ul.side-nav {
+  padding-top: 40px;
+  width: 260px;
+  transform: translateX(100%);
+}
+.site-description {
+  display: block;
+  font-size: 25px;
+  padding: 0px 32px 34px 32px;
+}
+.side-nav li.selected, nav ul a:hover {
+  background-color: #8c9eff;
+}
+.side-nav ul.collapsible > li > a {
+  padding-left: 32px;
+}
+.side-nav ul.collapsible > li ul > li > a {
+  padding-left: 47px;
+}
+.nav-separator {
+  margin: 10px 20px;
+  border-bottom: 1px solid black;
+}
+a.button-collapse.top-nav {
+  position: absolute;
+  text-align: center;
+  height: 48px;
+  width: 48px;
+  left: 1%;
+  top: 46px;
+  float: none;
+  color: #fff;
+}
+a.button-collapse.top-nav i {
+  font-size: 30px;
+}
+header, main, footer {
+  padding-left: 0px;
+}
+
+/* Reduced site margin */
+@media only screen and (min-width : 993px) {
+  .container {
+    width: 85%;
+    max-width: none;
+  }
+}
+
+/* Adjusted top announcement */
+.fixed-announcement .announcement {
+  background-color: #000;
+}
+.fixed-announcement .announcement .container {
+  color: #fff;
+  padding: 8px 0;
+}
+
+/* Adjusted top navigation */
+nav.top-nav {
+  height: 122px;
+  line-height: 64px;
+}
+nav.top-nav a.page-title {
+  line-height: 122px;
+  font-size: 48px;
+}
+nav.top-nav a.project-name {
+  line-height: 111px;
+  padding-top: 19px;
+  padding-right: 10px;
+  font-size: 24px;
+}
+
+/* Image helper */
+img.centered {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Table modifiers */
+table.compact td, table.compact div {
+  padding: 0px;
+  margin:  5px;
+}
+table.compact td {
+  vertical-align: top;
+}
+table.compact p > label {
+  margin-bottom: 20px;
+}
+table.compact .select-wrapper {
+  margin: 0;
+}
+table.compact .prefix {
+  padding-top: 0.5rem;
+}
+table.compact .suffix {
+  margin-left: 3rem;
+}
+table.clinched p > label {
+  margin-bottom: 0px;
+}
+i.material-icons.tooltipped {
+  position: absolute;
+  padding-left: 10px;
+}
+span.userInfo {
+  font-size: 9pt;
+}
+span.userWarning {
+  color: red;
+  font-size: 9pt;
+}
+
+/* Progress bar adjustments */
+.progress {
+  background-color: #c7cfff;
+  height: 20px;
+}
+
+/* Console settings */
+.console pre {
+  margin-top: 0px;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #d3d3d3;
+}
+.console .tab a i.material-icons {
+  color: #cc0000;
+  padding-left: 10px;
+}
+#consoleErr {
+  color: #cc0000;
+}
+
+/* List of images on the right */
+.image-list {
+  position: absolute;
+  left : auto;
+  right: 260px;
+  top: 122px;
+  bottom: 0;
+  overflow-y: auto;
+  height: auto;
+  padding-top: 10px !important;
+  text-align: center;
+  z-index: 0;
+}
+.image-list .heading {
+  font-size: 25px;
+  padding: 0 32px;
+}
+.image-list label {
+  height: 15px;
+}
+.image-list li {
+  padding-top: 15px;
+}
+.image-list li>a {
+  height: auto;
+}
+.image-list li>a.page-text {
+  padding: 0;
+  display: inline-block;
+}
+.image-list li>a.active {
+  background-color: #8c9eff;
+}
+.image-list li.select-all {
+  font-weight: bold;
+  padding: 0;
+}
+i.material-icons.image-list-broken-image {
+  float: none !important;
+  margin: 0 !important;
+}
+i.material-icons.image-list-trigger {
+  position: absolute;
+  left: 35px;
+  height: 48px;
+  line-height: 48px;
+  color: #888;
+  cursor: pointer;
+}
+i.material-icons.image-list-trigger.active {
+  color: #5c6bc0 !important;
+}
+.includes-list {
+  padding-right: 260px;
+}
+
+/* Tab style adjustments */
+.tabs {
+overflow-x: hidden;
+}
+.tab {
+  list-style-position: inside;
+  border: 1px solid #ddd;
+}
+.tabs .tab a {
+  color: #000;
+}
+.tabs .tab a.active {
+  color: #5c6bc0;
+}
+.tabs .tab a:hover {
+  color: #5c6bc0;
+}
+.tabs .indicator {
+  background-color: #5c6bc0;
+}
+
+
+/* Multi-Select adjustments */
+.ms-container {
+  min-width: 370px;
+  width: auto !important;
+}
+.ms-container .ms-selectable li.ms-hover,
+.ms-container .ms-selection li.ms-hover {
+  background-color: #5c6bc0 !important;
+}
+.ms-container .ms-selectable li.ms-elem-selectable,
+.ms-container .ms-selection li.ms-elem-selection {
+  font-size: 1rem !important;
+}
+div.custom-header {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+ul.invalid {
+  border: 1px solid red !important;
+  background-color: #ffe6e6;
+}
+.msHeading {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+}
+button[data-id="msRecModelAddOption"] {
+  margin-left: 5px;
+}
+.pn-button  {
+  border: none;
+  background-color: transparent;
+  display: inline-flex;
+  vertical-align: middle;
+  line-height: 3vh;
+  padding: 10px;
+  margin: 20px 0px 0px 0px;
+  color: #8c9eff;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+.pn-button:active {
+  background-color: transparent !important;
+}
+.pn-button:focus {
+  background-color: transparent !important;
+}
+.prev-area{
+  text-align: left;
+}
+.next-area{
+  text-align: right;
+}
+.input-field .prefix.right{
+  right: 0;
+}
+#pn-prev > i {
+  padding-left: 0px;
+}
+#pn-next > i {
+  padding-right: 0px;
+}
+.pn-button:hover{
+  border-color: #8c9eff !important;
+}
+.dropdown-button .right{
+  right: 0;
+  font-size: 1.5rem;
+  padding-top: 1.7vh;
+}
+
+.input-field > ul{
+  width: 100%;
+}
+.autocomplete-content {
+  position: absolute;
+}
+.pnicon{
+  font-size: 1.2rem;
+  line-height: 3vh;
+}
+.footer-copyright{
+  display: block !important;
+  background-color: #283593 !important;
+  margin-bottom: 0px;
+  min-height: 20px !important;
+  }
+  .footer-copyright .row{
+    margin-bottom: 0px;
+  }
+.footer-version{
+  margin-right: 5px;
+  font-size: 10px;
+  float: right;
+}
+  .footer-version .row{
+    margin-bottom: 2px;
+    margin-top: 2px;
+
+  }
+.personList{
+  width: 80%;
+  margin: auto;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+.divider{
+  margin-bottom: 25px;
+}
+.flex{
+  display: flex;
+}
+.whitelist-button{
+  margin: auto auto 21px;
+}
+#whitelist-select{
+  left: 0px !important;
+  margin-top: 85px; /* #TODO Change this ugly hack asap*/
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.secondary-btn {
+  float: right;
+}
+@media only screen and (max-width : 1700px) {
+  button[data-id="msRecModelAddOption"] {
+    margin-left: 0px;
+    margin-top: 5px;
+    display:block;
+  }
+}
+input[type=number]:invalid {
+  border-bottom: 1px solid red !important;
+  box-shadow: 0 1px 0 0 red !important;
+}
+#version_icon{
+    color: red;
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+#filter-option-row{
+  margin-left: 27% !important;
+  margin-bottom: 0 !important;
+}
+
+#filter-select-text{
+  margin-left: 5%;
+  margin-right: 10%;
+}
+
+#filter-select-input input{
+  padding-top: 2%;
+}
+
+#filter-option-row div .select-wrapper input{
+  margin-bottom: 0;
+  line-height: 1rem;
+
+}
+
+#selectFilter{
+  position: relative !important;
+}
+
+#OCR4all_Version_container{
+  cursor: pointer;
+}
+
+label[for*="backupCheckbox"]{
+  color: black;
+}
+
+#legacy-convert-preloader{
+  display: none;
+}
+
+#emptyLines-row form {
+  padding-left: 50px;
+}
+
+#pageDelimiter-row form {
+  padding-left: 50px;
+}
